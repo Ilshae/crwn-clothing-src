@@ -5,6 +5,7 @@
     "node": "10.22.0",
     "npm": "6.4.1"
   },
+  "homepage" : "https://ilshae.github.io/crwn-clothing/",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
