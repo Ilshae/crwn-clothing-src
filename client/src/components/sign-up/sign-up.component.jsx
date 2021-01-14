@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { connect } from 'react-redux'
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
 
-import FormInput from '../form-input/form-input.component'
-import CustomButton from '../custom-button/custom-button.component'
+import FormInput from '../form-input/form-input.component';
+import CustomButton from '../custom-button/custom-button.component';
 
-import { signUpStart } from '../../redux/user/user.actions'
+import { signUpStart } from '../../redux/user/user.actions';
 
-import { SignUpContainer, SignUpTitle } from './sign-up.styles'
+import { SignUpContainer, SignUpTitle } from './sign-up.styles';
 
 const SignUp = ({ signUpStart }) => {
   const [userCredentials, setUserCredentials] = useState({
@@ -14,23 +14,27 @@ const SignUp = ({ signUpStart }) => {
     email: '',
     password: '',
     confirmPassword: ''
-  })
-  const { displayName, email, password, confirmPassword } = userCredentials
+  });
+
+  const { displayName, email, password, confirmPassword } = userCredentials;
 
   const handleSubmit = async event => {
-    event.preventDefault()
+    event.preventDefault();
+
     if (password !== confirmPassword) {
       alert("passwords don't match");
       return;
     }
-    signUpStart({ displayName, email, password })
-  }
+
+    signUpStart({ displayName, email, password });
+  };
 
   const handleChange = event => {
     const { name, value } = event.target;
 
-    setUserCredentials({...userCredentials, [name]: value });
-  }
+    setUserCredentials({ ...userCredentials, [name]: value });
+  };
+
   return (
     <SignUpContainer>
       <SignUpTitle>I do not have a account</SignUpTitle>
@@ -71,11 +75,14 @@ const SignUp = ({ signUpStart }) => {
         <CustomButton type='submit'>SIGN UP</CustomButton>
       </form>
     </SignUpContainer>
-  )
-}
+  );
+};
 
 const mapDispatchToProps = dispatch => ({
   signUpStart: userCredentials => dispatch(signUpStart(userCredentials))
-})
+});
 
-export default connect(null, mapDispatchToProps)(SignUp)
+export default connect(
+  null,
+  mapDispatchToProps
+)(SignUp);
