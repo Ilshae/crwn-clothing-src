@@ -8,11 +8,13 @@ import { store, persistor } from './redux/store';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
+import ScrollToTop from './utils/scroll-to-top.component'
 import App from './App';
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
+      <ScrollToTop />
       <PersistGate persistor={persistor}>
         <App />
       </PersistGate>

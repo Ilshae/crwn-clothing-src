@@ -18,6 +18,10 @@ export const CollectionItemContainer = styled.div`
       opacity: 0.85;
       display: flex;
     }
+
+    div {
+      color: #bf0d46;
+    }
   }
 
   @media screen and (max-width: 800px) {
