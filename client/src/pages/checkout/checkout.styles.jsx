@@ -1,6 +1,16 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 export const CheckoutPageContainer = styled.div`
+  animation: 0.2s ${fadeIn};
   width: 55%;
   min-height: 90vh;
   display: flex;
