@@ -12,6 +12,7 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import {
   HeaderContainer,
+  BrandContainer,
   LogoContainer,
   OptionsContainer,
   OptionLink
@@ -19,18 +20,20 @@ import {
 
 export const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
-    <LogoContainer to='/'>
-      <Logo className='logo' />
-    </LogoContainer>
+    <BrandContainer to='/crwn-clothing/'>
+      <LogoContainer>
+        <Logo className='/crwn-clothing/logo' />
+      </LogoContainer>
+      Crwn Clothing
+    </BrandContainer>
     <OptionsContainer>
-      <OptionLink to='/shop'>SHOP</OptionLink>
-      <OptionLink to='/shop'>CONTACT</OptionLink>
+      <OptionLink to='/crwn-clothing/shop'>SHOP</OptionLink>
       {currentUser ? (
         <OptionLink as='div' onClick={signOutStart}>
           SIGN OUT
         </OptionLink>
       ) : (
-        <OptionLink to='/signin'>SIGN IN</OptionLink>
+        <OptionLink to='/crwn-clothing/signin'>SIGN IN</OptionLink>
       )}
       <CartIcon />
     </OptionsContainer>

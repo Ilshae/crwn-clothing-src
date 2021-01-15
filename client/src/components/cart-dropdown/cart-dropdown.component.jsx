@@ -19,7 +19,7 @@ export const CartDropdown = ({ cartItems, history, dispatch }) => (
     <CartItemsContainer>
       {cartItems.length ? (
         cartItems.map(cartItem => (
-          <CartItem key={cartItem.id} item={cartItem} />
+          <CartItem key={cartItem.id} cartItem={cartItem} />
         ))
       ) : (
         <EmptyMessageContainer>Your cart is empty</EmptyMessageContainer>
@@ -27,11 +27,11 @@ export const CartDropdown = ({ cartItems, history, dispatch }) => (
     </CartItemsContainer>
     <CartDropdownButton
       onClick={() => {
-        history.push('/checkout');
+        history.push('/crwn-clothing/checkout');
         dispatch(toggleCartHidden());
       }}
     >
-      GO TO CHECKOUT
+      CHECKOUT
     </CartDropdownButton>
   </CartDropdownContainer>
 );

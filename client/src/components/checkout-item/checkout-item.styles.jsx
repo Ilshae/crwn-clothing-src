@@ -34,13 +34,18 @@ export const TextContainer = styled.span`
 
 export const QuantityContainer = styled(TextContainer)`
   display: flex;
-
+  
   span {
     margin: 0 10px;
+    color: black;
   }
 
   div {
     cursor: pointer;
+  }
+  
+  &:hover {
+    color: #bf0d46;
   }
 `;
 
@@ -49,6 +54,10 @@ QuantityContainer.displayName = 'QuantityContainer';
 export const RemoveButtonContainer = styled.div`
   padding-left: 12px;
   cursor: pointer;
+
+  &:hover {
+    color: #bf0d46;
+  }
 `;
 
 RemoveButtonContainer.displayName = 'RemoveButtonContainer';

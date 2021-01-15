@@ -42,6 +42,7 @@ export const CheckoutPage = ({ cartItems, total }) => (
     ))}
     <TotalContainer>TOTAL: ${total}</TotalContainer>
     <WarningContainer>
+      Github Pages does not allow payments to send but the functionality is here :) <br/><br/>
       *Please use the following test credit card for payments*
       <br />
       4242 4242 4242 4242 - Exp: 01/20 - CVV: 123

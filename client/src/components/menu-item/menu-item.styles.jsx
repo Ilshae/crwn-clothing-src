@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
-	height: ${({ size }) => (size ? '380px' : '240px')}
+	height: ${({ size }) => (size ? '380px' : '240px')};
 	min-width: 30%;
 	overflow: hidden;
 	flex: 1 1 auto;
@@ -13,7 +13,8 @@ export const MenuItemContainer = styled.div`
 	overflow: hidden;
 
 	&:hover {
-		cursor: pointer;
+    cursor: pointer;
+    border: 1px solid #bf0d46;
 
 		& .background-image {
 			transform: scale(1.1);
@@ -21,7 +22,9 @@ export const MenuItemContainer = styled.div`
 		}
 
 		& .content {
-			opacity: 0.9;
+      opacity: 0.9;
+      border: 1px solid #bf0d46;
+      color: #bf0d46;
 		}
 	}
 
@@ -34,7 +37,8 @@ export const MenuItemContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    height: 200px;
+    height: 240px;
+    min-width: 50vw;
   }
 `;
 
@@ -67,7 +71,6 @@ export const ContentTitle = styled.span`
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 22px;
-  color: #4a4a4a;
 `;
 
 export const ContentSubtitle = styled.span`
