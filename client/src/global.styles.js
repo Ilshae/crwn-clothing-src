@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 	body {
@@ -6,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 16px;
 		padding: 20px 40px;
 		background-color: white;
+
 		@media screen and (max-width: 800px) {
 			padding: 10px;
 		}
@@ -23,3 +25,8 @@ export const GlobalStyle = createGlobalStyle`
 		box-sizing: border-box;
 	}
 `;
+
+export const PageWrapper = styled.div`
+		position: relative;
+		min-height: 95vh;
+`
