@@ -8,7 +8,7 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
-export const HomePageContainer = styled.div`
+export const HomePageContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;

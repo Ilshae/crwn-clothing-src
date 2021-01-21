@@ -9,7 +9,7 @@ const fadeIn = keyframes`
   }
 `
 
-export const CollectionPageContainer = styled.div`
+export const CollectionPageContainer = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;

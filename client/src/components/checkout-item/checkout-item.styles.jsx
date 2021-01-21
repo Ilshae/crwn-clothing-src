@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CheckoutItemContainer = styled.div`
+export const CheckoutItemContainer = styled.section`
   width: 100%;
   display: flex;
   min-height: 100px;

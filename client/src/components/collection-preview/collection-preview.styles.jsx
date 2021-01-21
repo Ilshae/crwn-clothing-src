@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CollectionPreviewContainer = styled.div`
+export const CollectionPreviewContainer = styled.article`
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;

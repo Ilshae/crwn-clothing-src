@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import CustomButton from '../custom-button/custom-button.component';
 
-export const CartDropdownContainer = styled.div`
+export const CartDropdownContainer = styled.aside`
   position: absolute;
   width: 240px;
   height: 340px;

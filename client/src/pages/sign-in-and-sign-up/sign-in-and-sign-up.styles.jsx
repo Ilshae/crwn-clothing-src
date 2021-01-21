@@ -8,7 +8,7 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
-export const SignInAndSignUpContainer = styled.div`
+export const SignInAndSignUpContainer = styled.article`
   width: 850px;
   display: flex;
   justify-content: space-between;

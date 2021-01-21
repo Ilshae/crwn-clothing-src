@@ -8,7 +8,7 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
-export const ShopPageContainer = styled.div`
+export const ShopPageContainer = styled.article`
   width: 100%;
   animation: 0.2s ${fadeIn};
 `;

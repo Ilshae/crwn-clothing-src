@@ -9,7 +9,7 @@ const fadeIn = keyframes`
   }
 `
 
-export const CheckoutPageContainer = styled.div`
+export const CheckoutPageContainer = styled.article`
   animation: 0.2s ${fadeIn};
   width: 55%;
   min-height: 90vh;
